@@ -1,0 +1,436 @@
+/*
+Project Name: portfolio site 
+Client: Nancy Mazzone
+Author: Nancy Mazzone
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+ clear: both;
+}
+
+.alignright {
+ float: right;
+ padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+ float: left;
+ padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+@media screen and (max-width:1025px{})
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* max-width: 1024px; */
+    /* background-color: #fedccc; */
+    /* background-color:#f9f7e8; */
+  }
+
+  /* header { */
+  height: 300px;
+ 
+  }
+
+
+.logo{
+    width:60px; 
+    margin: 100px 30px 0px 100px; 
+    position: relative;
+    top: 0;
+    }
+
+    .name {
+        position: absolute;
+        top:50px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color:#5f434d;
+        height:60px;
+        margin-left: 100px;
+        margin-bottom: 100px:
+        
+        }
+    
+
+    .header .container {
+        display: flex;
+        height: 50px;
+        width: 430px;
+        border: 1px solid grey;
+        align-content: flex-end:
+        }
+
+ .quote{
+         font-family: 'Open Sans', sans-serif;   
+        font-weight: 200; 
+        font-size: 18px; 
+        color:#a48791;
+        position: absolute;
+        top:200px;
+        left: 1000px;
+            
+        }
+
+blockquote {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
+    font-style: italic;
+    font-size: 2rem; 
+    color:#a48791;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* padding:100px 0px 100px 0px; */
+
+    margin-top: 50px;
+    flex:1;
+    }
+
+
+main {
+    flex: 1;
+    /* display: flex; */
+      }
+
+.recent-work{
+        margin: auto;
+        max-width: 100%;
+        }
+        
+.recent-work .container {
+    display: flex;
+    /* margin: 75px; */
+    justify-content: space-evenly;
+   
+    }
+
+h1{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300; 
+        font-size: 36px; 
+        color: #371722;
+        margin: 0px 0px 20px 0px;
+        /* border-bottom:  5px solid #d9baad; */
+        padding-left: 45px;
+       /* width: 300px; */
+         
+    }
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size:26;
+    text-align: center;
+}
+
+
+.recent1 {
+    flex: 1;
+    /* padding: 30px; */
+}
+.recent2{
+    flex: 1;
+    padding: 100px;
+}
+.recent1 img {
+    max-width: 100%;
+}
+.recent2 img {
+    max-width: 100%;
+}
+
+h3{
+font-family: 'Open Sans', sans-serif;
+font-weight: 100;
+ color: grey;
+text-align: center;
+font-size: 20px;
+padding-bottom: 30px;
+}
+
+.about{
+    padding: 50px;
+    margin: auto;
+    max-width: 100%;
+    background-color: #fcfaf3;
+    }
+
+
+.about .container {
+    display: flex;
+    /* border: 1px solid grey; */
+    /* padding:50px; */
+    height:300px;
+    /* padding: 10px; */
+
+}
+
+.column1{
+    height:200px;
+    width: 250px;
+    padding:20px;
+    flex: 1;
+}
+
+.column2{
+    height:200px;
+    width: 250px;
+    padding:20px;
+    flex:1;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;   
+    font-weight: 200; 
+    font-size: 18px; 
+    line-height: 1.75em;
+
+}
+.drawings {
+    padding: 50px;
+    margin: auto;
+    max-width: 100%; 
+    }
+
+.drawings .container {
+    display: flex;       
+    /* height: 600px; */
+    /* border: 1px solid grey; */
+    /* padding: 60px;  */
+    align-items: center;
+    }
+
+    .drawing1 {
+        flex: 1;
+        padding: 20px;
+    }
+    .drawing2 {
+        flex: 1;
+        padding: 20px;
+    }
+    .drawing5 {
+        flex: 1;
+        padding: 20px;
+    }
+    .drawing1 img {
+        max-width: 100%;
+    }
+    .drawing2 img {
+        max-width: 100%;
+    }
+
+    .drawing5 img {
+        max-width: 100%;
+    }
+
+
+    .paintings {
+        padding: 50px;
+        margin: auto;
+        max-width: 100%; 
+        }
+    
+    .paintings .container {
+        display: flex;       
+        /* height: 600px; */
+        /* border: 1px solid grey; */
+        /* padding: 60px;  */
+        align-items: center;
+        }
+    
+        .painting1 {
+            flex: 1;
+            padding: 20px;
+        }
+        .painting2{
+            flex: 1;
+            padding: 20px;
+        }
+        .painting3{
+            flex: 1;
+            padding: 20px;
+        }
+        .painting1 img {
+            max-width: 100%;
+        }
+        .painting2 img {
+            max-width: 100%;
+        }
+    
+        .painting3 img {
+            max-width: 100%;
+        }
+
+        .sketchbook{
+            /* padding: 50px; */
+            margin: auto;
+            max-width: 100%;
+            background-color: #fcfaf3;
+            }
+        
+        
+        .sketchbook .container {
+            display: flex;
+            /* height: 600px; */
+            /* border: 1px solid grey; */
+            /* padding: 30px; */
+        
+        }
+        .sketchbook {
+            flex: 1;
+             padding: 20px;
+        }
+        .sketchbook img {
+            max-width: 100%;
+        }
+
+        .post {
+            flex: 1;
+            padding: 20px;
+        }
+       
+    
+        #headline {
+
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300; 
+            font-size: 40px; 
+            color: #371722;
+            margin: 50px 0 20px 0;
+            /* border:1px solid grey; */
+            text-align: center; 
+          }  
+          
+          
+          .subscribe {
+            /* display: flex; */
+            height: 600px;
+            max-width: 50%;
+            padding: 50px;
+            margin: auto;
+         
+        }
+
+     .subscribe .input-container{
+         max-width: 500px;
+    /* display:flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+      
+
+        input[type=email]{
+        border: 1px solid gray;
+        height: 30px;
+        max-width: 200px;
+        margin:auto;
+        flex: 1;
+        
+        }
+
+        
+        .btn {
+            flex: 2;
+            background-color: #e57066;
+            /* border-radius: 0px; */
+            border: none;
+            color: ffffff ;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin: auto;
+        
+          }
+
+        
+          .form-row{
+            padding:10px 0;
+            display: flex;
+            width:200px;
+            margin-left: 600px;
+         }
+        
+         .form-row label{
+        
+        padding-right: 10px;
+         }
+        
+         .form-row input{
+             flex:1;
+         }
+         
+
+        .btn {
+            flex: 1;
+            background-color: #e57066;
+            border-radius: 5px;
+            border: none;
+            color: ffffff ;
+            padding: 5px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin: auto;
+        
+          }
+h4{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 600;
+}
+/******************************************
+/* Mobile Styles
+/*******************************************/
+@media only screen and (max-width:360px{})
