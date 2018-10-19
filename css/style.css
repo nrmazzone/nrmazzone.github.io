@@ -59,11 +59,12 @@ Developer @GA in NYC
 
 /* Center the container */
 .page-container{
-
+    min-height: 100vh;
     display: flex;
     flex-direction: column; 
     max-width: 1400px;
     justify-content: center;
+    margin: auto;
 }
 
 @media (max-width: 300px) {
