@@ -163,7 +163,7 @@ main {
 .recent-work .container {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    
     align-items: center;
 
     }
@@ -486,6 +486,17 @@ h4{
     font-family: 'Open Sans', sans-serif; 
     font-size: 14px;
     font-weight: 600;
+}
+footer{
+    
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 75px;
+    height:100px
+
+
 }
 /******************************************
 /* Mobile Styles
